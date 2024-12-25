@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humar Verification</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-transform: capitalize;
+        }
+        .h-verification{
+            width: 30rem;
+            padding: 2rem ;
+            border: 1px solid black;
+
+        }
+        .checker{
+            padding: 5px;
+            display: flex;
+            border-radius: 3px;
+            gap: 15px;
+        }
+        /* .work{margin-left: 5px;} */
+        input{
+            padding: 5px;
+        }
+        button{
+            width: 70px;
+            padding: 7px;
+            margin-top: 5px;
+            border: 1px solid lightskyblue;
+            border-radius: 5px;
+            transition:all .5s ease-in;
+         }
+        button:hover{
+            background-color: rgb(255, 255, 255);
+         }
+        
+    </style>
+<body>
+    
+        <div class="h-verification">
+            <h2>Human Varification check</h2>
+            <p>please enter a character you see on the image below:</p>
+            <div class="checker">
+                <div class="captcha">
+                        <img src=" https://qph.cf2.quoracdn.net/main-qimg-25f4af317355179f60f0229018308205-lq " alt="" width="120px">
+                </div>
+                <div class="work">
+                    <div class="one">
+                        <input type="text" value="7364">
+                    </div>
+                    <div class="two">
+                        <button type="button" >submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

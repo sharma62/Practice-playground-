@@ -1,0 +1,39 @@
+* {
+    padding: 0%;
+    margin: 0px;
+
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 20vw;
+    height: 100vh;
+    overflow: none;
+    border-right: 1px solid ;
+ }
+
+.main {
+    width: 80vw;
+    height: 100vh;
+    overflow: none scroll;
+}
+.logo{
+    width:100%;
+ }
+.sidebar-item{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.sidebar-item >p{
+    margin: 2px 0px 0px 25px;
+}
+.fs-3{
+    font-size: 25px;
+    padding: 5px;
+    margin-left: 25px;
+}

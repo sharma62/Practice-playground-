@@ -1,0 +1,73 @@
+<!-- 
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star</title>
+    <style>
+      #star {
+        position: relative;
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        background: gold;
+        clip-path: polygon(
+          50% 0%,  /* point 1*/ 
+          61% 25%, /* point 2*/ 
+          98% 25%, /* point 3*/ 
+          68% 50%, /* point 4*/ 
+          98% 70%, /* point 5*/ 
+          61% 70%, /* point 6*/ 
+          50% 100%, /* point 7*/ 
+          40% 70%, /* point 8*/ 
+          5% 70%, /* point 9*/ 
+          35% 50%,/* point 10*/ 
+          5% 25%, /* point 11*/ 
+          39% 25% /* point 12*/ 
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div id="star"></div>
+  </body>
+</html> -->
+<html>
+  <head>
+    <title>Star using Box Model</title>
+    <style>
+   
+.star {
+  position:absolute;
+  top:0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid yellow;
+ 
+}
+
+.star::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -50px;
+}
+.star::after {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid yellow;
+  transform: rotate(180deg);
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="star"></div>
+   
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Layout</title>
+    <style>
+      table {
+        width: 80vw;
+        border: 1px solid goldenrod;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      tr,
+      td,
+      th {
+        border: 1px solid goldenrod;
+        width: 20vw;
+      }
+      th{
+        text-transform: capitalize;
+      }
+      tr{
+        text-transform: uppercase;
+      }
+      thead {
+        color: aliceblue;
+        background-color: gray;
+      }
+      td[colspan="3"] {
+        text-align: right;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>firm</th>
+          <th>org</th>
+          <th>lab</th>
+          <th>sub lab</th>
+          <th>Business plans</th>
+          <th>business components</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="11">xyz</td>
+          <td rowspan="5">cst</td>
+          <td rowspan="3">ct</td>
+          <td>ads</td>
+          <td>1</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <!-- <td>xyz</td> -->
+          <!-- <td>cst</td> -->
+          <!-- <td>ct</td> -->
+          <td>bto</td>
+          <td>2</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <!-- <td>xyz</td> -->
+          <!-- <td>cst</td> -->
+          <!-- <td>ct</td> -->
+          <td>csi</td>
+          <td>3</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <!-- <td>xyz</td> -->
+          <!-- <td>cst</td> -->
+          <td rowspan="2">vct</td>
+          <td>ads</td>
+          <td>4</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <!-- <td>xyz</td> -->
+          <!-- <td>cst</td> -->
+          <!-- <td>ct</td> -->
+          <td>bto</td>
+          <td>5</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <!-- <td>xyz</td> -->
+          <td colspan="3">sub total</td>
+          <!-- <td>ct</td>
+            <td>ads</td> -->
+          <td>6</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <!-- <td>xyz</td> -->
+          <td rowspan="4">cst</td>
+          <td rowspan="3">ct</td>
+          <td>ads</td>
+          <td>7</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <!-- <td>xyz</td> -->
+          <!-- <td>cst</td> -->
+          <!-- <td>ct</td> -->
+          <td>bto</td>
+          <td>8</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <!-- <td>xyz</td> -->
+          <!-- <td>cst</td> -->
+          <!-- <td>ct</td> -->
+          <td>csi</td>
+          <td>9</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <!-- <td></td> -->
+          <!-- <td>cst</td> -->
+          <td>vct</td>
+          <td>ads</td>
+          <td>10</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <!-- <td></td> -->
+          <td colspan="3">sub total</td>
+          <!-- <td>ct</td>
+            <td>ads</td> -->
+          <td>11</td>
+          <td>15</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

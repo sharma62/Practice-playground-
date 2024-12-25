@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+      body {
+        display: flex;
+        min-width: 100vh;
+        flex-direction: row;
+        margin: 0%;
+      }
+      .col-1{
+        background: #D7E8D4;
+        z-index: 1;
+      }
+      .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 3;
+    min-height: 60vh;
+  }
+  .content > aside {
+    background: beige;
+    flex: 1;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+    background: repeating-linear-gradient()
+    gri
+  }
+    </style>
+  </head>
+  <body>
+    <nav class="col-1">Nav</nav>
+    <div class="col-2">
+      <header>header</header>
+      <main class="content">
+        <article>article</article>
+        <aside>aside</aside>
+      </main>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>

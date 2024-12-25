@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube Player</title>
+    <style type="text/css">
+      .player {
+        width: 100%;
+      }
+      .video-container {
+        width: 70%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 1em 0;
+      }
+      .video {
+        width: 100%;
+      }
+      .video-list {
+        width: 20%;
+        display: inline-block;
+        padding: 0 1em;
+        vertical-align: top;
+      }
+      .video-list li {
+        list-style: none;
+      }
+      .video-list img {
+        width: 50%;
+      }
+      .video-list p {
+        padding: 0.5em 0;
+        width: 30%;
+      }
+      .video-list span {
+        font-weight: 600;
+      }
+      .video-list p,
+      img {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="player">
+      <div class="video-container">
+        <video class="video" controls>
+          <source
+            src="https://youtu.be/qAtw_sK3368?si=mvYRnMOaXcvSw9Xx"
+            type="video/mp4"
+          />
+        </video>
+        <h2>Animated cartoon for Children | 2023</h2>
+      </div>
+      <div class="video-list">
+        <ul>
+          <li>
+            <img
+              src="https://i.ytimg.com/an_webp/9tL1m9MXaXQ/mqdefault_6s.webp?du=3000&sqp=CPzC354G&rs=AOn4CLC4cD5zYBuj81-FjZaaDNEc9mYqBg"
+              alt="thumbnail1"
+            />
+
+            <p><span>Video 1</span><br />Short description of Video 1</p>
+          </li>
+          <li>
+            <img
+              src="https://i.ytimg.com/an_webp/ZVO8Wt_PCgE/mqdefault_6s.webp?du=3000&sqp=COLS354G&rs=AOn4CLC6GOtKf56PIytnUqstq1Cj9-2oLQ"
+              alt="thumbnail2"
+            />
+            <p><span>Video 2</span><br />Short description of Video 2</p>
+          </li>
+          <li>
+            <img
+              src="https://i.ytimg.com/an_webp/JTtVFPALu6o/mqdefault_6s.webp?du=3000&sqp=COTF354G&rs=AOn4CLBkhK7Xh3RP_OPxyym08QjpKki-Vg"
+              alt="thumbnail3"
+            />
+            <p><span>Video 3</span><br />Short description of Video 3</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

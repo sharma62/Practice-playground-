@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comments</title>
+    <style>
+      .comment {
+        padding: 15px 0px;
+        border-color: aliceblue;
+        
+      }
+      textarea {
+        margin-top: 5px;
+      }
+      .commentArea {
+        
+        border-top:1px  solid black;
+        border-left:1px  solid black;
+        border-bottom:1px  solid black;
+        border-color: rgba(20, 17, 17, 0.2); /* Light red with 20% transparency */
+        
+        width: 550px;
+        padding: 15px;
+        box-sizing: border-box;
+      }
+      .cmt-group {
+        border-bottom: 1px solid black;
+        border-color: rgba(0, 0, 0, 0.3); /* Light red with 30% transparency */
+      }
+      .cmt-group small {
+        color: black;
+        opacity: .7;
+      }
+      .cmt-group small span{
+        margin-left:10px ;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="comment">
+      <h2>Comments</h2>
+      <small>share your thoughts below !</small>
+      <br />
+      <textarea
+        name=""
+        id=""
+        cols="40"
+        rows="4"
+        placeholder="write your comment here. . ."
+      ></textarea>
+      <button type="submit">submit</button>
+    </div>
+    <div class="commentArea">
+      <div class="cmt-group">
+        <p>This is n execellent artical!</p>
+        <small><b>Akash</b> <span>Today</span></small>
+      </div>
+      <div class="cmt-group">
+        <p>I totally agreed.</p>
+        <small><b>Mrityunjay</b> <span>yesterday</span></small>
+      </div>
+      <div class="cmt-group">
+        <p>This is n execellent artical</p>
+        <small><b>Akash</b> <span>Today</span></small>
+      </div>
+    </div>
+  </body>
+</html>
