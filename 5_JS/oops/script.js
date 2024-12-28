@@ -163,4 +163,5 @@ class Circle extends Shape {
 
 const product = new Circle("red",20)
 
-p
+console.log(Number(product.getArea().toFixed(2)))
+
