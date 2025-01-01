@@ -66,16 +66,16 @@ function submit() {
         const inputField = document.getElementById("input1")
         if (!(inputField.value)) {
             throw new Error("Empty input field ");
-        }
-        let process = evalString()
-        resultElement.textContent = `: ${process}`
-        // setTimeout(() => {
-        //     inputField.value = ""
-        //     resultElement.textContent = ""
-        // }, 60 * 1000)
+            }
+            let process = evalString()
+            resultElement.textContent = `: ${process}`
+            // setTimeout(() => {
+            //     inputField.value = ""
+            //     resultElement.textContent = ""
+            // }, 60 * 1000)
 
-    } catch (e) {
-        resultElement.textContent = `:  * ${e.name} ${e.message}`
-    }
+        } catch (e) {
+            resultElement.textContent = `:  * ${e.name} ${e.message}`
+        }
 }
 
