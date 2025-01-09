@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="contaienr py-10 mx-auto max-w-3xl"> 
+      <h1 class="text-3xl font-bold capitalize py-5">form validation!</h1>
+      <form action="">
+        <div class="grid grid-cols-2 gap-3">
+            <div class="col-span-2">
+            <input type="text" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Full Name" id="name" />
+            </div>
+            <div class="col-span-2">
+                <input type="number" class="w-full p-2 border border-gray-300 rounded-md " placeholder="Phone number" id="phone">
+            </div>
+            <div class="col-span-2">
+                <input type="email" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Email" id="email">
+            </div>
+            <div class="col-span-2">
+                <input type="password"  class="w-full p-2 border border-gray-300 rounded-md" placeholder="password" id="password" autocomplete="on">
+            </div>
+            <div  class="col-span-2">
+            <button class="bg-blue-500 text-white p-2 rounded-md" id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+      </div>                                                                                                                                                                                                                                                                                                                                        
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
