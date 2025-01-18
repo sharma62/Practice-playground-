@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shopping List App</title>
+  </head>
+  <body>
+    <h1>Grocery List</h1>
+    <div class="row">
+      <div class="input">
+        <input placeholder="item name" id="item-name-input" />
+        <input placeholder="item price" type="number" id="item-price-input" />
+        <button id="addBtn">Add</button>
+        <p id="error-msg"></p>
+      </div>
+<hr>
+      <table>
+        <thead>
+          <tr>
+            <th>Sr. No.</th>
+            <th class="data-ns-test">Title</th>
+            <th class="data-ns-test">Price</th>
+          </tr>
+        </thead>
+        <tbody id="List">
+            <tr>
+              <td></td>
+            </tr>
+        </tbody >
+        <tfoot id = "tblFooter">
+          <tr>
+            <td>Grand Total</td>
+            <td data-ns-test="grandTotal" colspan="2">0</td>
+          </tr>
+        </tbody>
+      </tfoot>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

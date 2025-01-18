@@ -1,0 +1,48 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.container {
+    max-width: 99%;
+}
+
+.row {
+    width: 70%;
+    margin: auto;
+    padding: 10px 10px;
+}
+
+.form-group {
+    padding: 10px 3px;
+}
+
+.form-group>label,
+input,
+button {
+    font-size: larger;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+table {
+    border: 1px solid black;
+    text-align: center;
+    width: 99%;
+}
+thead{
+   background-color: rgb(169, 169, 172);
+}
+#error-msg{
+    color: red;
+    text-transform: capitalize;
+}
+.input{
+    padding: 10px;
+ }
