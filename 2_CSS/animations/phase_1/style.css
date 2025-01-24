@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    padding: 20px;
+}
+
+#box {
+
+    background-color: crimson;
+    padding: 5px;
+    border-radius: 10px;
+    position: absolute;
+    animation: animate 5s   
+        /*timing-function delay iteration-count direction fill-mode*/
+    ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate1 {
+    0% {
+        width: 10px;
+        height: 10px;
+        background-color: blue;
+        rotate: 0deg;
+        top: 0;
+        left: 0;
+    }
+/* 
+    25% {
+        background-color: yellowgreen;
+        rotate: 180deg;
+        width: 50px;
+        height: 50px;
+        left: 50%;
+        top: 0%;
+    }
+
+    50% {
+        background-color: palevioletred;
+        height: 100px;
+        width:100px ;
+        top: 0;
+        left: 91%;
+    }
+    
+    75% {
+        background-color: rgb(208, 255, 0);
+        height: 150px;
+        width:150px ;
+        top: 77% ;
+        left: 85%;
+    } */
+
+    100% {
+        background-color: rgb(255, 0, 0);
+        rotate: 360deg;
+        height: 200px;
+        width: 200px;
+        left: 0%;
+        top: 72%;
+    }
+   
+
+}
