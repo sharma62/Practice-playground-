@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,button,span {
+            border: 2px solid black;
+            margin: 80px;
+            padding: 12px;
+        }
+        #ansistors{
+            background-color: rgb(153, 105, 200);
+        }
+        #grandParent{
+            background-color: aquamarine;
+        }
+        #parnet{
+            background-color: rgb(94, 138, 127);
+        }
+        #child{
+            background-color: rgb(114, 133, 127);
+        }
+
+        button{
+            margin-left: 260px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="ansistors">anistors
+        <div id="grandParent">grandParent
+            <div id="parnet">parnet
+                <div id="child">child
+                    <button id="child-son">
+                        click me
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
