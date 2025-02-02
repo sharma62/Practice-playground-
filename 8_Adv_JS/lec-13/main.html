@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            width: 800px;
+            /* height: 600px; */
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+            align-items: center;
+            padding-top: 200px;
+
+        }
+
+        div input {
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+
+        }
+
+        div label {
+            font-size: 100px;
+            margin-bottom: 50px;
+            border-radius: 5px;
+        }
+
+        div input:focus {
+            outline: 2px solid rgb(88, 88, 90);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="search">Dooodle</label>
+        <input type="text" placeholder="search here. . .  " id="searchBar">
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
