@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Proof</title>
+</head>
+<body>
+    <h1>Storage Testing</h1>
+
+    <button onclick="setCookies()">Set Cookie</button>
+    <button onclick="getCookies()">Get Cookie</button>
+    <button onclick="setLocalStorage()">Set localStorage</button>
+    <button onclick="getLocalStorage()">Get localStorage</button>
+    <button onclick="setSessionStorage()">Set sessionStorage</button>
+    <button onclick="getSessionStorage()">Get sessionStorage</button>
+
+    <script>
+        // 🍪 **Cookies**
+        function setCookies() {
+            document.cookie = "username=amit; expires=Fri, 31 Dec 2025 23:59:59 GMT; path=/";
+            alert("Cookie Set!");
+        }
+
+        function getCookies() {
+            alert("Cookies: " + document.cookie);
+        }
+
+        // 📦 **localStorage**
+        function setLocalStorage() {
+            localStorage.setItem("cart", JSON.stringify(["Product1", "Product2"]));
+            alert("localStorage Set!");
+        }
+
+        function getLocalStorage() {
+            let cart = localStorage.getItem("cart");
+            alert("localStorage: " + cart);
+        }
+
+        // 🔄 **sessionStorage**
+        function setSessionStorage() {
+            sessionStorage.setItem("examTimer", "30 minutes");
+            alert("sessionStorage Set!");
+        }
+
+        function getSessionStorage() {
+            let timer = sessionStorage.getItem("examTimer");
+            alert("sessionStorage: " + timer);
+        }
+    </script>
+</body>
+</html>
