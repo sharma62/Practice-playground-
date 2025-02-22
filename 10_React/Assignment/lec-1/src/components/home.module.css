@@ -1,0 +1,45 @@
+.p5 {
+    padding: 15px;
+}
+
+.mb4 {
+    margin-bottom: 1rem;
+}
+
+.bgLight {
+    background-color: #e9ecefc0;
+}
+
+.rounded3 {
+    border-radius: .3rem;
+}
+
+.py5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.display5 {
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+.fwBold {
+    font-weight: 700;
+}
+
+.fs4 {
+    font-size: 1.25rem;
+}
+
+.btnLg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+}   
+
+.btnPrimary{
+    background: rgb(74, 147, 85);
+    padding: 10px;
+    color: whitesmoke;
+}
